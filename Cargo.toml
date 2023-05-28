@@ -2,6 +2,7 @@
 name = "semver_sort"
 version = "0.1.0"
 description = "Sorts semver strings or numbers"
+repository = "https://github.com/ragingwind/rust-semver-sort"
 license = "MIT"
 edition = "2021"
 
