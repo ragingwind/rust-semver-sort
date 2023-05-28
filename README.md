@@ -51,6 +51,10 @@ semver_compare("0.0.0-abc", "0.0.0-bcd", true);
 Returns sorted semver
 
 ```rust
+use semver_sort::{
+  semver_sort
+};
+
 semver_sort(["0.0.4-abc", "0.0.3-abc", "0.0.1-abc", "0.0.2-abc", "0.0.0-abc"]);
 // ["0.0.0-abc", "0.0.1-abc", "0.0.2-abc", "0.0.3-abc", "0.0.4-abc"]
 ```
