@@ -3,11 +3,12 @@
 > Sorts semver strings or numbers. and more util functions
 
 ## Usage
+
 Add the following to your Cargo.toml:
 
 ```toml
 [dependencies]
-semver_sort = "0.1"
+semver_sort = "1"
 ```
 
 ## API
@@ -17,6 +18,10 @@ semver_sort = "0.1"
 Parse semver string to Semver type
 
 ```rust
+use semver_sort::{
+  semver::semver_regex
+};
+
 print!("{:?}", semver_regex("1.2.3-alpha.10.beta"));
 // Semver { major: "1", minor: "2", patch: "3", prerelease: Some("alpha.10.beta"), buildmetadata: None }
 ```
@@ -26,6 +31,11 @@ print!("{:?}", semver_regex("1.2.3-alpha.10.beta"));
 Compare returns Ordering
 
 ```rust
+use semver_sort::{
+    semver::semver_compare,
+    semver::Semver,
+};
+
 semver_compare("0.0.0-abc", "0.0.0-abc", true);
 // Ordering::Equal
 

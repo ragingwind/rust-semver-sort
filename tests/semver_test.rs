@@ -1,8 +1,7 @@
 use semver_sort::{
     semver::semver_compare,
-    semver::semver_sort,
     semver::semver_regex,
-    semver::Semver,
+    semver::Semver, semver_sort,
 };
 
 fn create_semver<'a>(
